@@ -7,6 +7,44 @@
   pointer-events: none;
 }
 
+#feedback{
+  color: red;
+  margin-bottom: 20px;
+  position: absolute;
+  left: 40%;
+  z-index: 1;
+}
+
+.input_email{
+  margin-bottom: 5px;
+}
+
+.input_password{
+  margin-top: 30px;
+}
+
+.h1_heading{
+  color: #179fef;
+}
+
+.button_submit{
+  margin-top: 40px;
+  width: 22%;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #179fef;
+  border: none;
+  color: white;
+  font-weight: bold;
+  width: '22%'; 
+  padding: 10;
+  cursor: 'pointer' 
+}
+
+.error {
+  position: relative;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
