@@ -14,6 +14,7 @@ function Header() {
     const logOutHandler = () => {
         cookies.remove('x-auth-token')
         navigate('/login')
+        window.location.reload()
     }
 
     return (

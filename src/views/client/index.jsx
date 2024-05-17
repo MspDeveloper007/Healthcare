@@ -3,7 +3,6 @@ import Table from '../../components/Table/Table';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faMessage } from '@fortawesome/free-regular-svg-icons';
-import axios from 'axios';
 import { get } from '../../service/service';
 
 function Client() {
@@ -62,7 +61,7 @@ function Client() {
       <h1>Client</h1>
       <div>
         <Table
-          rows={rows}
+          rows={rows?.length > 0 ? rows : []}
           columns={columns}
         // pageSizeOptions={[5, 10, 25]}
         />

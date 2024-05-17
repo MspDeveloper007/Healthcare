@@ -44,6 +44,7 @@ function Login() {
                     setTimeout(() => {
                         cookies.set('x-auth-token', "agigaiisdasdsho")
                         actions.setSubmitting(false);
+                        window.location.reload()
                         navigate('/')
                     }, 1000);
                 }}
