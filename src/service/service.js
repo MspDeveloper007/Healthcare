@@ -5,7 +5,7 @@ export const instance = axios.create({
     baseURL: 'http://192.168.1.62:8000/',
     timeout: '',
     params: {}
-})
+}) 
 
 
 export const post = (url, data) => instance.post(url, data).then(res => res).catch(err => err)
